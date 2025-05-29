@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CrackVault :: RePack Zone</title>
+    <link rel="icon" type="image/png" href="/img/logo_mec_w.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -28,7 +29,9 @@
         <div class="header-wrapper">
             <div class="header-main">
                 <h1 class="header-title">
-                    <img src="/img/logo_mec.png" alt="RG Mechanics Repacks" class="header-logo">
+                    <a href="#hero" class="header-logo-link">
+                        <img src="/img/logo_mec.png" alt="RG Mechanics Repacks" class="header-logo">
+                    </a>
                 </h1>
                 <p class="header-subtitle">PRO-инструменты и утилиты — сохранены в .rar и .zip для удобного доступа</p>
             </div>
@@ -227,7 +230,39 @@
                             <p>Идеально подходит трейдерам, аналитикам и исследователям, которые ценят полный контроль над аналитикой.</p>
                         </div>
                     </div>
-        
+
+                    <!-- 3Commas -->
+                    <div class="soft__item">
+                        <img src="/img/3Commas.png" alt="3Commas logo" class="soft__logo">
+                        <h3 class="soft__item-title">
+                            <i data-lucide="bot" class="icon-lucide_title"></i> 3Commas Automation [Unlimited]
+                        </h3>
+                        <p class="soft__item-desc">
+                            Устанавливается в два клика. Полный набор для API и ботовой торговли.
+                        </p>
+                        <a href="#" class="soft__button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="soft__icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                <path d="M12 16l4-5h-3V4h-2v7H8l4 5zm8 2H4v2h16v-2z"/>
+                            </svg>
+                            Скачать .exe (95 MB)
+                        </a>
+                        <p class="soft__downloads">
+                            <i data-lucide="download" class="icon-lucide"></i> Загружено <strong>10,054</strong> раз
+                        </p>
+                        <a href="#" class="soft__more-toggle" data-target="commas-more">Подробнее</a>
+                        <div id="commas-more" class="soft__more-content">
+                            <p><strong>3Commas Unlimited Build</strong> — активированная сборка с полным доступом ко всем функциям платформы ботов без подписки и ограничений по аккаунтам.</p>
+                            <ul>
+                                <li><i data-lucide="cpu" class="icon-lucide"></i> Неограниченное количество DCA-, GRID- и SmartTrade-ботов с мгновенным запуском.</li>
+                                <li><i data-lucide="key" class="icon-lucide"></i> Поддержка всех бирж (Binance, KuCoin, OKX, Bybit и др.) через API без лимитов.</li>
+                                <li><i data-lucide="package" class="icon-lucide"></i> Более 50 готовых стратегий + шаблоны из популярных пабликов.</li>
+                                <li><i data-lucide="bar-chart-3" class="icon-lucide"></i> PRO-аналитика по позициям, риск-менеджмент, трейлинг-функции.</li>
+                                <li><i data-lucide="monitor-smartphone" class="icon-lucide"></i> Устанавливается как локальный дашборд (.exe) с автономным режимом и прокси-поддержкой.</li>
+                            </ul>
+                            <p>Подходит для арбитража, тестирования стратегий и полной автоматизации трейдинга.</p>
+                        </div>
+                    </div>
+
                     <!-- TradingView -->
                     <div class="soft__item">
                         <img src="/img/TradingView.svg" alt="TradingView logo" class="soft__logo">
@@ -258,38 +293,6 @@
                                 <li><i data-lucide="wrench" class="icon-lucide"></i> Экспорт в PDF, полный дамп шаблонов и кастомных индикаторов.</li>
                             </ul>
                             <p>Рекомендуется аналитикам, работающим с несколькими рынками и стратегиями.</p>
-                        </div>
-                    </div>
-        
-                    <!-- 3Commas -->
-                    <div class="soft__item">
-                        <img src="/img/3Commas.png" alt="3Commas logo" class="soft__logo">
-                        <h3 class="soft__item-title">
-                            <i data-lucide="bot" class="icon-lucide_title"></i> 3Commas Automation [Unlimited]
-                        </h3>
-                        <p class="soft__item-desc">
-                            Устанавливается в два клика. Полный набор для API и ботовой торговли.
-                        </p>
-                        <a href="#" class="soft__button">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="soft__icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                                <path d="M12 16l4-5h-3V4h-2v7H8l4 5zm8 2H4v2h16v-2z"/>
-                            </svg>
-                            Скачать .exe (95 MB)
-                        </a>
-                        <p class="soft__downloads">
-                            <i data-lucide="download" class="icon-lucide"></i> Загружено <strong>10,054</strong> раз
-                        </p>
-                        <a href="#" class="soft__more-toggle" data-target="commas-more">Подробнее</a>
-                        <div id="commas-more" class="soft__more-content">
-                            <p><strong>3Commas Unlimited Build</strong> — активированная сборка с полным доступом ко всем функциям платформы ботов без подписки и ограничений по аккаунтам.</p>
-                            <ul>
-                                <li><i data-lucide="cpu" class="icon-lucide"></i> Неограниченное количество DCA-, GRID- и SmartTrade-ботов с мгновенным запуском.</li>
-                                <li><i data-lucide="key" class="icon-lucide"></i> Поддержка всех бирж (Binance, KuCoin, OKX, Bybit и др.) через API без лимитов.</li>
-                                <li><i data-lucide="package" class="icon-lucide"></i> Более 50 готовых стратегий + шаблоны из популярных пабликов.</li>
-                                <li><i data-lucide="bar-chart-3" class="icon-lucide"></i> PRO-аналитика по позициям, риск-менеджмент, трейлинг-функции.</li>
-                                <li><i data-lucide="monitor-smartphone" class="icon-lucide"></i> Устанавливается как локальный дашборд (.exe) с автономным режимом и прокси-поддержкой.</li>
-                            </ul>
-                            <p>Подходит для арбитража, тестирования стратегий и полной автоматизации трейдинга.</p>
                         </div>
                     </div>
                 </div>
@@ -483,8 +486,28 @@
         </section>
     </main>
 
-    <footer>
-        <p>© CrackVault 2025 | Zlo.by Style. Powered by Enthusiasts</p>
+    <footer class="site-footer">
+        <div class="footer__container">
+            <div class="footer__branding">
+                <p class="footer__desc">
+                    © 2005–<span id="current-year"></span> RG Mechanics Repacks<br>
+                    Свобода доступу до PRO-інструментів для трейдерів, дослідників і арбітражників.
+                </p>
+                
+                <script>
+                    document.getElementById("current-year").textContent = new Date().getFullYear();
+                </script>
+            </div>
+    
+            <div class="footer__social">
+                <a href="https://t.me/your_channel" target="_blank" class="footer__icon" aria-label="Telegram">
+                    <i data-lucide="send"></i>
+                </a>
+                <a href="https://github.com/your_repo" target="_blank" class="footer__icon" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 
 
