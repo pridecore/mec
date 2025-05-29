@@ -73,7 +73,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelectorAll('.nav-link[href^="#"], .intro__button[href^="#"]');
+    const navLinks = document.querySelectorAll(
+        '.nav-link[href^="#"], .header-logo-link[href^="#"], .intro__button[href^="#"]'
+    );
     const header = document.querySelector('.site-header');
     const headerHeight = header.offsetHeight;
 
@@ -82,8 +84,9 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault();
             const targetId = this.getAttribute("href");
             const target = document.querySelector(targetId);
+
             if (target) {
-                const offsetTop = target.offsetTop - (headerHeight - 100); // ← менший відступ
+                const offsetTop = target.offsetTop - (headerHeight - 100); // Менший відступ
                 window.scrollTo({
                     top: offsetTop,
                     behavior: "smooth"
