@@ -41,7 +41,7 @@ body::before {
     height: 100%;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px); /* для Safari */
-    z-index: 0;
+    z-index: 1;
 }
 
 
@@ -1163,7 +1163,68 @@ ul, ol {
     transform: scale(1.015);
 }
 
+.site-footer {
+    background-color: var(--header-bg);
+    border-top: 2px solid var(--border);
+    padding: 32px 20px;
+    font-family: var(--font-main);
+    font-size: 14px;
+    color: var(--gray-text);
+    position: relative;
+    z-index: 1;
+}
 
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__branding {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.footer__logo {
+    width: 50px;
+    margin-bottom: 12px;
+}
+
+.footer__desc {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.footer__social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__icon {
+    color: var(--gray-text);
+    font-size: 22px;
+    transition: color 0.3s ease;
+}
+
+.footer__icon:hover {
+    color: var(--highlight);
+}
+
+@media (max-width: 768px) {
+    .footer__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer__social {
+        margin-top: 16px;
+    }
+}
 
 
 /* Адаптивність */
